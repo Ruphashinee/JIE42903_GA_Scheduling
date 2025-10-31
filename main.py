@@ -165,12 +165,12 @@ def genetic_algorithm(all_programs, num_time_slots, ratings_dict, pop_size, gene
 st.set_page_config(layout="wide")
 st.title("📺 TV Schedule Genetic Algorithm")
 
-# --- Parameters (from your original code) ---
-# These are fixed for this assignment, but could be added to sidebar
-GEN = 100
-POP = 50
-EL_S = 2
-CSV_FILE_PATH = 'program_ratings_modified.csv' # <-- IMPORTANT: Reads your modified file
+# --- Constants ---
+GEN = 100 # Generations
+POP = 50 # Population size
+EL_S = 2 # Elitism size
+# --- IMPORTANT: Change this line to match your file name ---
+CSV_FILE_PATH = 'program.rating_csv' 
 
 # --- Sidebar for User Input (Step 3) ---
 st.sidebar.header("GA Parameters")
